@@ -6,6 +6,12 @@ public class BottlesOfBeer
     {
         var lyrics = new List<string>();
 
+        if (numberOfBootles >= 2)
+        {
+            lyrics.Add($"2 bottles of beer on the wall, 2 bottles of beer.");
+            lyrics.Add($"Take one down and pass it around, 1 bottle of beer on the wall.");
+        }
+
         if (numberOfBootles >= 1)
         {
             lyrics.Add("1 bottle of beer on the wall, 1 bottle of beer.");
