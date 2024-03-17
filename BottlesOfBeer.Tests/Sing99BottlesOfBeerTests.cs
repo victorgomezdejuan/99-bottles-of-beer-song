@@ -37,4 +37,14 @@ public class Sing99BottlesOfBeerTests
         result[0].Should().Be("2 bottles of beer on the wall, 2 bottles of beer.");
         result[1].Should().Be("Take one down and pass it around, 1 bottle of beer on the wall.");
     }
+
+    [Fact]
+    public void ThreeBottles()
+    {
+        var result = bottlesOfBeer.Sing(3);
+
+        result.Length.Should().Be(8);
+        result[0].Should().Be("3 bottles of beer on the wall, 3 bottles of beer.");
+        result[1].Should().Be("Take one down and pass it around, 2 bottles of beer on the wall.");
+    }
 }
